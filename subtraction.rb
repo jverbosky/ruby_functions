@@ -9,4 +9,4 @@ end
 
 # print subtract(3, 2)
 # print subtract(7.1, 3.18)
-print subtract("string", 5)
+# print subtract("string", 5)

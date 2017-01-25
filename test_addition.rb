@@ -32,4 +32,10 @@ class TestAddition < Minitest::Test
 		assert_equal(false, results)
 	end
 
+	def test_6_passing_more_than_2_parameters
+		# Need to use splat argument
+		results = add(1, 1, 1)
+		assert_equal(3, results)
+	end
+
 end
