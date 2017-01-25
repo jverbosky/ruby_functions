@@ -1,8 +1,7 @@
 
 
-def addition(num_1, num_2)
-	#return num_2 + num_2
-	2 # simplest way to pass test 1
+def add(num_1, num_2)
+	return num_1 + num_2
 end
 
-# print addition(2, 3)
+# print add(2, 3)
