@@ -11,7 +11,7 @@ class TestSubtraction < Minitest::Test
 
 	def test_2_subtracting_floats
 		results = subtract(5.32, 1.1)
-		assert_equal(4.21, results)
+		assert_equal(4.22, results)
 	end
 
 end
