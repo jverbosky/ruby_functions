@@ -14,4 +14,9 @@ class TestSubtraction < Minitest::Test
 		assert_equal(4.22, results)
 	end
 
+	def test_3_fail_on_non_numbers
+		results = subtract("a", 3)
+		assert_equal(false, results)
+	end
+
 end
