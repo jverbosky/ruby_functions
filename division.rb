@@ -1,0 +1,1 @@
+# Function to divide an indefinite amount of numbers

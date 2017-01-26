@@ -1,5 +1,6 @@
-require "minitest/autorun"
+# Test for subtraction.rb
 
+require "minitest/autorun"
 require_relative "subtraction.rb"
 
 class TestSubtraction < Minitest::Test

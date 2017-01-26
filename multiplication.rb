@@ -1,0 +1,1 @@
+# Function to multiply an indefinite amount of numbers
