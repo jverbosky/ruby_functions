@@ -40,6 +40,11 @@ class TestDivision < Minitest::Test
     assert_equal(false, results)
   end
 
+  def test_8_rounding_a_long_quotient
+    results = divide(22, 7)
+    assert_equal(3.14285, results)
+  end
+
   # def test_5_single_argument_17
   #   results = multiply(17)
   #   assert_equal(17, results)
