@@ -62,9 +62,9 @@ class TestMultiplication < Minitest::Test
     assert_equal(false, results)
   end
 
-  # def test_4_passing_more_than_2_parameters
-  #   results = subtract(25, 13, 5)
-  #   assert_equal(7, results)
-  # end
+  def test_4_passing_more_than_2_integers
+    results = multiply(1, 2, 3, 4, 5)
+    assert_equal(120, results)
+  end
 
 end
