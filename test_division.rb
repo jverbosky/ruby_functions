@@ -45,20 +45,20 @@ class TestDivision < Minitest::Test
     assert_equal(3.14286, results)
   end
 
-  # def test_5_single_argument_17
-  #   results = multiply(17)
-  #   assert_equal(17, results)
-  # end
+  def test_9_single_argument_17
+    results = divide(17)
+    assert_equal(17, results)
+  end
 
-  # def test_6_single_argument_0
-  #   results = multiply(0)
-  #   assert_equal(0, results)
-  # end
+  def test_10_single_argument_0
+    results = divide(0)
+    assert_equal(0, results)
+  end
 
-  # def test_7_no_argument
-  #   results = multiply()
-  #   assert_equal(false, results)
-  # end
+  def test_11_no_argument
+    results = divide()
+    assert_equal(false, results)
+  end
 
   # # Playing with a real calculator, product of floats has combined number of decimal places
   # # Ex: 3.1 & 4.1 > two decimal places, 3.11, 4.11 > four decimal places

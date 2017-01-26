@@ -32,6 +32,9 @@ end
 # puts divide(0, 7)  # 0
 # puts divide(1, 2, 3, 0, 4, 5, 6)  # false
 # puts divide(22, 7)  # 3.14286
+# puts divide(109)  # 109
+# puts divide(0)  # 0
+# puts divide()  # false
 
 # puts multiply(4, 13, 0, 23, 9)  # 0
 # puts multiply(5)  # 5
