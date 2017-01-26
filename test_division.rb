@@ -65,14 +65,4 @@ class TestDivision < Minitest::Test
     assert_equal(false, results)
   end
 
-  # def test_12_passing_more_than_2_integers
-  #   results = multiply(1, 2, 3, 4, 5)
-  #   assert_equal(120, results)
-  # end
-
-  # def test_13_passing_more_than_2_floats
-  #   results = multiply(1.1, 2.2, 3.3, 4.4, 5.5)
-  #   assert_equal(193.26120, results)
-  # end
-
 end

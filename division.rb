@@ -35,14 +35,4 @@ end
 # puts divide(109)  # 109
 # puts divide(0)  # 0
 # puts divide()  # false
-
-# puts multiply(4, 13, 0, 23, 9)  # 0
-# puts multiply(5)  # 5
-# puts multiply(0)  # 0
-# puts multiply()  # false
-# puts multiply(5.2, 8)  # 41.6
-# puts multiply(3.1, 4.1)  # 12.71
-# puts multiply(3.11, 4.11)  # 12.7821
-# puts multiply("a", 3)  # false
-# puts multiply(3, 5, 7, 9, 11)  # 10,395
-# puts multiply(2.2, 4.4, 6.6, 8.8)  # 562.2144
+# puts divide("a", 3)  # false
