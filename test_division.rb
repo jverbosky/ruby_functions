@@ -60,27 +60,10 @@ class TestDivision < Minitest::Test
     assert_equal(false, results)
   end
 
-  # # Playing with a real calculator, product of floats has combined number of decimal places
-  # # Ex: 3.1 & 4.1 > two decimal places, 3.11, 4.11 > four decimal places
-  # def test_8_multiplying_floats_one_decimal_place
-  #   results = multiply(3.1, 4.1)
-  #   assert_equal(12.71, results)
-  # end
-
-  # def test_9_multiplying_floats_two_decimal_places
-  #   results = multiply(3.11, 4.11)
-  #   assert_equal(12.7821, results)
-  # end
-
-  # def test_10_multiplying_an_integer_and_a_float
-  #   results = multiply(3.526, 9)
-  #   assert_equal(31.734, results)
-  # end
-
-  # def test_11_fail_on_non_numbers
-  #   results = multiply("a", 3)
-  #   assert_equal(false, results)
-  # end
+  def test_12_fail_on_non_numbers
+    results = divide("a", 3)
+    assert_equal(false, results)
+  end
 
   # def test_12_passing_more_than_2_integers
   #   results = multiply(1, 2, 3, 4, 5)
