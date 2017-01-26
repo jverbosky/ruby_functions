@@ -10,15 +10,15 @@ class TestDivision < Minitest::Test
     assert_equal(2, results)
   end
 
-  # def test_2_multiplying_two_negative_integers
-  #   results = multiply(-2, -4)
-  #   assert_equal(8, results)
-  # end
+  def test_2_dividing_two_negative_integers
+    results = divide(-12, -2)
+    assert_equal(6, results)
+  end
 
-  # def test_3_multiplying_one_positive_and_one_negative_integer
-  #   results = multiply(3, -4)
-  #   assert_equal(-12, results)
-  # end
+  def test_3_dividing_one_positive_and_one_negative_integer
+    results = divide(20, -4)
+    assert_equal(-5, results)
+  end
 
   # def test_4_multiplying_with_zero
   #   results = multiply(1, 2, 3, 4, 5, 0, 6, 7, 8, 9, 10)
