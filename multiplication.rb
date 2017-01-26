@@ -39,4 +39,4 @@ end
 # puts multiply(5.2, 8)  # 41.6
 # puts multiply(3.1, 4.1)  # 12.71
 # puts multiply(3.11, 4.11)  # 12.7821
-#puts multiply("a", 3)
+# puts multiply("a", 3)
