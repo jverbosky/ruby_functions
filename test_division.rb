@@ -65,4 +65,11 @@ class TestDivision < Minitest::Test
     assert_equal(false, results)
   end
 
+  # Used a real calculator to come up with the assert_equal value
+  # and rounded up at the fifth decimal place (6.169575677808697)
+  def test_13_multiple_integers_and_floats
+    results = divide(284.182, 3.2, 19, 0.01928, 39.2944)
+    assert_equal(6.16958, results)
+  end
+
 end

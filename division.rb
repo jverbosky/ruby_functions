@@ -36,3 +36,4 @@ end
 # puts divide(0)  # 0
 # puts divide()  # false
 # puts divide("a", 3)  # false
+# puts divide(110.3, 8.23, 44.123, 9, 73.1, 0.00212)  # 0.21698
