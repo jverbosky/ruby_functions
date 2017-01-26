@@ -20,7 +20,10 @@ class TestMultiplication < Minitest::Test
     assert_equal(-12, results)
   end
 
-  # Need a test for zero - if any number is 0, product is 0
+  def test_4_multiplying_with_zero
+    results = multiply(1, 2, 3, 4, 5, 0, 6, 7, 8, 9, 10)
+    assert_equal(0, results)
+  end
 
   # def test_2_subtracting_floats
   #   results = subtract(5.32, 1.1)

@@ -28,5 +28,6 @@ end
 # puts multiply(10, 15)  # 150
 # puts multiply(-8, -9)  # 72
 # puts multiply(-11, 7)  # -77
+# puts multiply(4, 13, 0, 23, 9)  # 0
 #puts multiply(8.3, 9.7)
 #puts multiply("a", 3)
