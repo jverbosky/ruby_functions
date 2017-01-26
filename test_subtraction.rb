@@ -20,4 +20,9 @@ class TestSubtraction < Minitest::Test
 		assert_equal(false, results)
 	end
 
+	def test_4_passing_more_than_2_parameters
+		results = subtract(25, 13, 5)
+		assert_equal(7, results)
+	end
+
 end
