@@ -40,6 +40,17 @@ class TestMultiplication < Minitest::Test
     assert_equal(false, results)
   end
 
+  # Playing with a real calculator, product of floats has combined number of decimal places
+  # Ex: 3.1 & 4.1 > two decimal places, 3.11, 4.11 > four decimal places
+  def test_8_multiplying_floats_one_decimal_place
+    results = multiply(3.1, 4.1)
+    assert_equal(12.71, results)
+  end
+
+  def test_9_multiplying_floats_two_decimal_places
+    results = multiply(3.11, 4.11)
+    assert_equal(12.7821, results)
+  end
 
   # def test_2_subtracting_floats
   #   results = subtract(5.32, 1.1)
