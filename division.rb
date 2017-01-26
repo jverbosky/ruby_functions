@@ -9,18 +9,22 @@ def divide(*number)
   number.each do |n|
     if (n.class != Fixnum) && (n.class != Float)
       test_array.push(false)
-    elsif n.class == Float
-      number.inject do |dividend, divisor|
-        (dividend / divisor).round(5)
-      end
-    else
-      number.inject do |dividend, divisor|
-        (dividend / divisor).round(0)
-      end
     end
   end
   if test_array.length > 0
     return false
+  else
+    number.each do |n|
+      if n.class == Float
+        number.inject do |dividend, divisor|
+          (dividend / divisor).round(5)
+        end
+      else
+        number.inject do |dividend, divisor|
+          (dividend / divisor).round(0)
+        end
+      end
+    end
   end
 end
 
