@@ -22,7 +22,7 @@ def subtract(*number)
     return false
   else
     number.inject do |minuend, subtrahend|
-      minuend - subtrahend
+      (minuend - subtrahend).round(2)
     end
   end
 end
