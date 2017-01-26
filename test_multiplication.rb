@@ -5,9 +5,19 @@ require_relative "multiplication.rb"
 
 class TestMultiplication < Minitest::Test
 
-  def test_1_multiplying_integers
+  def test_1_multiplying_two_positive_integers
     results = multiply(2, 3)
     assert_equal(6, results)
+  end
+
+  def test_2_multiplying_two_negative_integers
+    results = multiply(-2, -4)
+    assert_equal(8, results)
+  end
+
+  def test_3_multiplying_one_positive_and_one_negative_integer
+    results = multiply(3, -4)
+    assert_equal(-12, results)
   end
 
   # def test_2_subtracting_floats
