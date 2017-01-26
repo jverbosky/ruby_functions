@@ -1,9 +1,14 @@
 # Function to multiply an indefinite amount of numbers
 
-# Starting with the add function as a baseline (like I did with subtraction)
-def add(*number)
+# Rewrote add function for multiplication
+# Had to start with the product at 1 for the .each loop to work properly
+# Will need to tweak this if one of the numbers is zero
+def multiply(*number)
   test_array = []
-  sum = 0
+  product = 1
+  if number.length == 0
+    test_array.push(false)
+  end
   number.each do |n|
     if (n.class != Fixnum) && (n.class != Float)
       test_array.push(false)
@@ -13,14 +18,15 @@ def add(*number)
     return false
   else
     number.each do |n|
-      sum += n
+      product *= n
     end
   end
-  return sum
+  return product
 end
 
 # Sandbox testing
-# puts add(2, 3, 5, 6, 7, 8, 100, 2, 4, 2)  # 139
-# puts add(8.3, 9.7)  # 18.0
-# puts add("a", 3)  # false
-# puts add("a","b")  # false
+# puts multiply(10, 15)  # 150
+# puts multiply(-8, -9)  # 72
+# puts multiply(-11, 7)  # -77
+#puts multiply(8.3, 9.7)
+#puts multiply("a", 3)
