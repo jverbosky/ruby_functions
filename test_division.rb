@@ -42,7 +42,7 @@ class TestDivision < Minitest::Test
 
   def test_8_rounding_a_long_quotient
     results = divide(22, 7)
-    assert_equal(3.14285, results)
+    assert_equal(3.14286, results)
   end
 
   # def test_5_single_argument_17
