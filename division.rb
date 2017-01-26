@@ -14,16 +14,8 @@ def divide(*number)
   if test_array.length > 0
     return false
   else
-    number.each do |n|
-      if n.class == Float
-        number.inject do |dividend, divisor|
-          (dividend / divisor).round(5)
-        end
-      else
-        number.inject do |dividend, divisor|
-          (dividend / divisor).round(0)
-        end
-      end
+    number.inject do |dividend, divisor|
+      (dividend / divisor).round(5)
     end
   end
 end
