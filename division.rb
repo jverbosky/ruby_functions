@@ -1,31 +1,23 @@
 # Function to divide an indefinite amount of numbers
 
 def divide(*number)
-  # test_array = []
-  # decimal_places = 0
-  # product = 1
-  # if number.length == 0
-  #   test_array.push(false)
-  # end
-  # number.each do |n|
-  #   if (n.class != Fixnum) && (n.class != Float)
-  #     test_array.push(false)
-  #   end
-  # end
-  # if test_array.length > 0
-  #   return false
-  # else
-  #   number.each do |n|
-  #     if n.class == Float
-  #       # If a number is a float, accumulate the number of decimal places
-  #       decimal_places += n.to_s.split('.').last.size
-  #       product *= n
-  #     else
-  #       product *= n
-  #     end
-  #   end
-  # end
-  # return product.round(decimal_places)
+  test_array = []
+  product = 1
+  if number.length == 0
+    test_array.push(false)
+  end
+  number.each do |n|
+    if (n.class != Fixnum) && (n.class != Float)
+      test_array.push(false)
+    end
+  end
+  if test_array.length > 0
+    return false
+  else
+    number.inject do |dividend, divisor|
+      (dividend / divisor).round(5)
+    end
+  end
 end
 
 # Sandbox testing
