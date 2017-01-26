@@ -1,10 +1,8 @@
 # Function to multiply an indefinite amount of numbers
 
-# Rewrote add function for multiplication
-# Had to start with the product at 1 for the .each loop to work properly
-# Will need to tweak this if one of the numbers is zero
 def multiply(*number)
   test_array = []
+  decimal_places = 0
   product = 1
   if number.length == 0
     test_array.push(false)
@@ -18,10 +16,16 @@ def multiply(*number)
     return false
   else
     number.each do |n|
-      product *= n
+      if n.class == Float
+        # If a number is a float, accumulate the number of decimal places
+        decimal_places += n.to_s.split('.').last.size
+        product *= n
+      else
+        product *= n
+      end
     end
   end
-  return product
+  return product.round(decimal_places)
 end
 
 # Sandbox testing
@@ -32,5 +36,7 @@ end
 # puts multiply(5)  # 5
 # puts multiply(0)  # 0
 # puts multiply()  # false
-#puts multiply(8.3, 9.7)
+# puts multiply(5.2, 8)  # 41.6
+# puts multiply(3.1, 4.1)  # 12.71
+# puts multiply(3.11, 4.11)  # 12.7821
 #puts multiply("a", 3)

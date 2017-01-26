@@ -52,6 +52,11 @@ class TestMultiplication < Minitest::Test
     assert_equal(12.7821, results)
   end
 
+  def test_10_multiplying_an_integer_and_a_float
+    results = multiply(3.526, 9)
+    assert_equal(31.734, results)
+  end
+
   # def test_2_subtracting_floats
   #   results = subtract(5.32, 1.1)
   #   assert_equal(4.22, results)
