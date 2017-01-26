@@ -25,11 +25,11 @@ class TestAddition < Minitest::Test
 		assert_equal(5.81, results)
 	end
 
-	# Commenting out - need to rework for variable # of addends
-	# def test_5_fail_on_non_numbers
-	# 	results = add("a", "b")
-	# 	assert_equal(false, results)
-	# end
+	# Uncommenting - working now with additional logic for handling non-numeric values
+	def test_5_fail_on_non_numbers
+		results = add("a", "b")
+		assert_equal(false, results)
+	end
 
 	def test_6_passing_more_than_2_parameters
 		# Need to use splat argument
