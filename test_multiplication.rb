@@ -25,6 +25,22 @@ class TestMultiplication < Minitest::Test
     assert_equal(0, results)
   end
 
+  def test_5_single_argument_17
+    results = multiply(17)
+    assert_equal(17, results)
+  end
+
+  def test_6_single_argument_0
+    results = multiply(0)
+    assert_equal(0, results)
+  end
+
+  def test_7_no_argument
+    results = multiply()
+    assert_equal(false, results)
+  end
+
+
   # def test_2_subtracting_floats
   #   results = subtract(5.32, 1.1)
   #   assert_equal(4.22, results)
