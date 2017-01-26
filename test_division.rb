@@ -25,6 +25,21 @@ class TestDivision < Minitest::Test
     assert_equal(false, results)
   end
 
+  def test_5_zero_as_divisor
+    results = divide(0, 1)
+    assert_equal(0, results)
+  end
+
+  def test_6_dividing_multiple_integers
+    results = divide(100, 5, 4, 2)
+    assert_equal(2.5, results)
+  end
+
+  def test_7_dividing_multiple_integers_with_zero_as_dividend
+    results = divide(88, 2, 0, 11)
+    assert_equal(false, results)
+  end
+
   # def test_5_single_argument_17
   #   results = multiply(17)
   #   assert_equal(17, results)
