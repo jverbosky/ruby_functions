@@ -15,15 +15,22 @@ def divide(*number)
     return false
   else
     number.inject do |dividend, divisor|
-      (dividend / divisor).round(5)
+      if divisor != 0
+        (dividend / divisor).round(5)
+      else
+        return false
+      end
     end
   end
 end
 
 # Sandbox testing
-puts divide(10, 2)  # 5
-puts divide(-18, -3)  # 6
-puts divide(-24, 8)  # -3
+puts divide(10, 2)  # 5.0
+puts divide(-18, -3)  # 6.0
+puts divide(-24, 8)  # -3.0
+puts divide(7, 0)  # false
+puts divide(0, 7)  # 0.0
+puts divide(1, 2, 3, 0, 4, 5, 6)  # false
 
 # puts multiply(4, 13, 0, 23, 9)  # 0
 # puts multiply(5)  # 5
