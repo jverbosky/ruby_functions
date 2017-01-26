@@ -20,10 +20,10 @@ class TestDivision < Minitest::Test
     assert_equal(-5, results)
   end
 
-  # def test_4_multiplying_with_zero
-  #   results = multiply(1, 2, 3, 4, 5, 0, 6, 7, 8, 9, 10)
-  #   assert_equal(0, results)
-  # end
+  def test_4_dividing_by_zero
+    results = divide(1, 0)
+    assert_equal(false, results)
+  end
 
   # def test_5_single_argument_17
   #   results = multiply(17)
